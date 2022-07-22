@@ -1,21 +1,25 @@
-import db from "../database/db";
-import TipsModel from "../models/pega-dicas";
+import TipsModel from "../models/dicas-model.js"
 
 const controllerCreate = (app) => {
-    const tipsModel = new TipsModel()
     app.get('/tips', (req, res) => {
-        const dicas = tipsModel.pegaDicas()
+        const dica = new TipsModel()
         res.json({
-            "Dica": dicas(Math.ramdom())
-        })
+                "dicas": dica.pegaDicas()
+            }
+        )
     })
 
     app.post('/create', (req, res) => {
         const body = req.body
-        db.tips.push(body.tips)
-        res.json({
-            "msg": "Dica inserida!"
-        })
+        const dicas = new TipsModel(body.dica)
+            dicas.insereDicas(dicas)
+            res.json(
+                {
+                "msg": "Dica inserida com sucesso",
+                "dicas": dicas
+                }
+            )
+
     })
 }
 

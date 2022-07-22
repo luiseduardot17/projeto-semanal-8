@@ -1,3 +1,3 @@
-const dicas = []
+const dicas = [];
 
-export default {dicas}
+export default { dicas }
