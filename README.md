@@ -90,5 +90,6 @@ npm start
               "dica5":"Invista nas suas Soft Skills", 
               "dica6":"Aprenda ou melhore seu inglês"
             }
+                  }
     }
     ```
