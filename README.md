@@ -6,6 +6,7 @@
 ## 💡 Solução:
 <p>O presente projeto trata-se de um código utilizando o Node.js com Express, com duas rotas na aplicação, uma delas vai receber uma dica e gravar essa dica no banco de dados e a outra rota deve devolver de forma aleatória uma das dicas que estão armazenadas no banco. <p>  
   
-## 🗂️ Biblioteca do NPM utilizada:
+## 🗂️ Packages:
 
 * [Express](https://www.npmjs.com/package/express)
+* [Nodemon](https://www.npmjs.com/package/nodemon)
